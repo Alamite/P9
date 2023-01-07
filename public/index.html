@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events.com</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel='stylesheet' href="style.css">
+</head>
+<body style="background-color:black;">
+	<div class="navbar">
+		<h1 class="logo">Events.com</h1>
+		<ul class="nav">
+			<li><a href="index.html" class="hoverlink">Home</a></li>
+			<li><a href="rides.html" class="hoverlink">Events</a></li>
+			<li><a href="service.html" class="hoverlink">Locations</a></li>
+			<li><a href="about.html" class="hoverlink">About Us</a></li>
+			<li><a href="contact.html" class="hoverlink">Contact Us</a></li>
+		</ul>
+	</div>
+    <div>
+	    <img src="hackathon.png" style="right: 0; bottom: 0;width: 100%;margin-top: -120px;height:1030;">
+
+        <div style ="position: absolute;
+		text-align: left;
+		bottom: -0;
+		background: rgba(0, 0, 0, 0.5);
+		color: #f1f1f1;
+		width: 100%;
+		padding-left: 20px;">
+	
+	<h1>Expore <span style="color: yellow;">hackathon</span></h1>
+	<p>Find your location<button class= 'btn' onclick="getLocation()">Detect location</button>
+	
+	<div id="loc"></div>
+	</div>
+</div>
+<div class='content' style="padding-top:6n0px; width:100%; height: 100px;">
+	<div style="color: white; float: left; padding-top: 270px; padding-left: 45px;">
+		<h1>Register</h1>
+		Sign up for the event here!
+	</div>
+	<div>
+	<form action="/sign_up" method="POST">
+		<div class="elem-group">
+		  <label for="name">Your Name</label>
+		  <input type="text" id="name" name="name" placeholder="John Doe" required>
+		</div>
+		<div class="elem-group">
+		  <label for="email">Your E-mail</label>
+		  <input type="text" id="email" name="email" placeholder="john.doe@email.com" required>
+		</div>
+		<div class="elem-group">
+		  <label for="phone">Your Phone</label>
+		  <input type="text" id="phno" name="phno" placeholder="498-348-3872" required>
+		</div>
+		<div class="elem-group">
+			<label for="spckey">Your member key</label>
+			<input type="text" id="password" name="password" placeholder="special key" required>
+			<br><br>
+		  <input class="btn" id="submit" value="submit" type="submit"></button>
+		  </div>
+	  </form>
+	</div>
+	<br>
+	<br>
+    </div>
+</center>
+</body>
+</html>
